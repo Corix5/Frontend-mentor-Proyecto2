@@ -1,0 +1,23 @@
+.info-container{
+    padding: 10px 60px;
+}
+
+.info-container article{
+    display: flex;
+    gap: 10px;
+    font-family: 'Poppins-ExtraBoldItalic';
+    font-size: 75px;
+    height: 100px;
+}
+
+.info-container article p:first-child{
+    color: #864cff;
+}
+
+@media screen and (max-width: 600px){
+    .info-container article{
+        font-size: 45px;
+        height: 70px;
+    }
+
+}

@@ -1,0 +1,157 @@
+.calculator-container{
+    width: 820px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 30px 30px 30% 30px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    padding: 60px 60px 10px 60px;
+    gap: 30px;
+}
+form article{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-family: 'Poppins-Bold';
+    color: #8c8c8c;
+}
+
+form input{
+    width: 120px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins-ExtraBold';
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+form input:focus{
+    outline: none;
+    border: 1px solid #9a24a3;
+}
+
+form input::placeholder{
+    font-family: 'Poppins-ExtraBold';
+    font-size: 30px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.button-container hr{
+    width: 80%;
+    height: 1px;
+    background-color: #ccc;
+    border: none;   
+}
+
+.button-container button{
+    border: none;
+    border-radius: 100%;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #864cff;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-container button:hover{
+    background-color: black;
+}
+
+.error{
+    font-family: 'Poppins-italic';
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.input-error{
+    border: 1px solid red;
+}
+
+.label-error{
+    color: #ff00008d;
+}
+
+@media screen and (max-width: 600px){
+    .calculator-container{
+        width: 90%;
+        height: 60%;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .form-container{
+        padding: 50px 10px;
+        gap: 10px;
+    }
+
+    form input{
+        width: 85px;
+        height: 60px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-family: 'Poppins-ExtraBold';
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    form input::placeholder{
+        font-size: 20px;
+    }
+
+    .button-container{
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .button-container hr{
+        width: 85%;
+        position: absolute;
+        left: 5px;
+    }
+
+    .button-container button{
+        padding: 15px;
+        position: absolute;
+        left: 35%;
+    }
+
+    .button-container img{
+       width: 30px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .calculator-container{
+        width: 90%;
+        height: 70%;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .form-container{
+        padding: 50px 10px;
+        gap: 10px;
+    }
+
+    form input{
+        width: 85px;
+        height: 60px;
+    }
+
+    form input::placeholder{
+        font-size: 20px;
+    }
+}
